@@ -37,10 +37,10 @@ class ApplicationController < Sinatra::Base
   end
 
   patch "/articles/:id" do
-
+    
   end
 
   delete '/articles/:id' do
-    
+
   end
 end
