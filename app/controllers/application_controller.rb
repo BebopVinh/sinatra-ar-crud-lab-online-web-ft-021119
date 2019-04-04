@@ -36,7 +36,7 @@ class ApplicationController < Sinatra::Base
     erb :edit
   end
 
-  patch "/articles/:id" do
+  post "/articles/:id" do
     binding.pry
     params.delete("_method")
     @article = Article.find(params[:id])
