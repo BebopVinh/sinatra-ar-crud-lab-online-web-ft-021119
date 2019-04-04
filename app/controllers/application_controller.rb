@@ -39,8 +39,8 @@ class ApplicationController < Sinatra::Base
   patch "/articles/:id" do
     params.delete("_method")
     @article = Article.find(params[:id])
-    binding.pry
     @article.update(params)
+    binding.pry
   end
 
   delete '/articles/:id' do
